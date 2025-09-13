@@ -1,14 +1,12 @@
-//
-//  main.c
-//  leap year
-//
-//  Created by Sanaa Kumar on 13/09/25.
-//
-
 #include <stdio.h>
-
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    int y;
+    printf("enter year = ");
+    scanf("%d",&y);
+    if ((y%4==0 && y%100 !=0) || y%400==0){
+        printf("year is a leap year");
+    }
+    else
+        printf("year is not a leap year");
     return 0;
 }
